@@ -24,22 +24,22 @@ const ALL_POIS_DATA: Record<string, any> = {
 };
 
 const POI_EXTENDED: Record<string, { story: string; highlights: string[]; visit: string }> = {
-  'LS-001': { story: '这里是灵山胜境游线的序章。大照壁作为游客进入灵山后看到的第一座大型构筑物，起到"欲扬先抑"的景观引导作用——绕过照壁后视野骤然开阔，香水海、五明桥依次展开，正式开启灵山的佛教文化之旅。', highlights: ['赵朴初题写"灵山胜境"', '适合拍摄景区入口纪念照'], visit: '建议入园后先在照壁前停留5到10分钟，拍摄湖光壁影同框照片，然后沿中轴线向北前行。' },
-  'LS-002': { story: '五明桥把游客从入口区引向佛教文化主轴，是进入核心景区的第一道仪式性桥梁。五座桥分别对应五种智慧，过桥寓意从世俗学识逐步进入佛法智慧，是"由外而内"的过渡。', highlights: ['五座汉白玉桥并列', '香水海水面开阔'], visit: '桥面平缓，适合慢行观景，过桥时可留意每座桥对应的智慧含义。' },
-  'LS-003': { story: '佛足坛以佛足印作为礼敬对象，把"佛"的概念具象化。玄奘西行带回佛足图样，体现了中印佛教文化交流的历史渊源。佛足印的32种吉祥图案也展示了佛教艺术的符号系统。', highlights: ['青铜佛足印', '祈福互动感强'], visit: '可顺路衔接菩提大道，停留约10分钟即可。' },
-  'LS-004': { story: '五智门是进入核心礼佛区的重要门户。作为连接"学"与"修"的标志性节点，五智门寓意通过五种智慧的修行最终达到觉悟。牌楼上的"六度"准则既是佛教修行指南，也蕴含普遍的人生哲理。', highlights: ['汉白玉牌坊造型', '中轴线仪式感'], visit: '适合站在门前中轴位置拍摄全景，然后沿中轴线继续北行。' },
-  'LS-005': { story: '菩提大道用树阵和步道构成过渡空间，引导游客在行进中静心。银杏树的四季变化丰富了景区的自然景观层次，而216棵银杏暗合108烦恼的两倍，增添了文化寓意。', highlights: ['约250米禅意步道', '四季景致变化'], visit: '建议放慢脚步游览，感受道路两旁的景观层次变化。' },
-  'LS-006': { story: '九龙灌浴是灵山最具动态效果的景观之一，以音乐喷泉结合佛教故事的形式呈现，是景区吸引游客停留和拍照的核心节点。表演利用水体、音乐、雕塑的融合，把宗教故事转化为感官体验，增强了游客的情感共鸣。', highlights: ['定时动态表演', '可接取祈福圣水'], visit: '表演前10到15分钟到场选好位置，结束后可在两侧接取祈福圣水。' },
-  'LS-007': { story: '降魔浮雕把成道故事浓缩在石刻中，是灵山中轴线上重要的文化解读点。佛陀降伏心魔的故事具有超越宗教的心理隐喻——每个人都需要面对和超越内心的贪欲与恐惧。', highlights: ['花岗岩大型浮雕', '雕刻细节丰富'], visit: '适合边走边看，留意佛陀神态与妖魔神态的对比。' },
-  'LS-008': { story: '阿育王柱借鉴古印度佛教传播符号，把"中国第一石柱"这个概念与灵山中轴线结合，强化了场地的历史纵深感和佛教文化传承的连续性。季羡林题写的梵文汉字增加了学术属性。', highlights: ['整块花岗岩雕成', '四狮柱头'], visit: '可与五智门、灵山大佛连成一组拍摄中轴线全景。' },
-  'LS-009': { story: '百子戏弥勒以欢喜、亲近为主题，把庄重的佛教氛围与日常生活趣事结合起来，属于"人间佛教"理念的体现。弥勒佛的"大肚能容"形象在民间广为流传，作品拉近了佛教文化与普通游客的心理距离。', highlights: ['弥勒佛卧姿群雕', '适合亲子拍照'], visit: '拍照后继续前往祥符禅寺方向，全程约15分钟。' },
-  'LS-010': { story: '祥符禅寺承接小灵山古刹传统，把灵山胜境的佛教渊源从现代拉回到唐代。玄奘法师命名"小灵山"的典故是灵山胜境的根基故事，也是理解整个景区文化脉络的关键节点。', highlights: ['唐代古刹传承', '祥符禅钟'], visit: '入寺保持安静，可撞钟祈福，体验千年古刹的宁静氛围。' },
-  'LS-011': { story: '灵山大佛是景区精神核心和视觉焦点，也是游客前往灵山的主要动机。大佛以体量、高度和精湛工艺形成强烈视觉冲击，填补了中国五方五佛的布局空缺。无论从哪个角度看，都能看见大佛慈祥的面容。', highlights: ['88米露天青铜大佛', '抱佛脚体验'], visit: '体力允许可登顶抱佛脚，俯瞰太湖全景。建议上午顺光时参观，拍照效果最佳。' },
-  'LS-012': { story: '佛教文化博览馆位于大佛座基内，借用了游客登顶抱佛脚的必经路线天然流量，把单向的"抱佛脚"体验扩展为双向的"登高 + 观展"组合体验，延长了游客在大佛基座区的停留时间。', highlights: ['大佛座基展馆', '万佛殿'], visit: '雨天或高温时适合安排较长停留，馆内有空调。免费讲解时段约30分钟。' },
-  'LS-013': { story: '灵山梵宫以宏大建筑展示佛教艺术，是灵山二期和三期工程的核心，集中体现了当代佛教建筑的最高工艺水准。梵宫与云冈石窟、龙门石窟的思路类似——用建筑和艺术的方式呈现佛教世界观。', highlights: ['72000平方米建筑', '吉祥颂演出'], visit: '建议预留至少1小时，先参观廊厅艺术品，再看吉祥颂演出。' },
-  'LS-014': { story: '五印坛城融合藏式建筑，与梵宫（汉传）和曼飞龙塔（南传）共同构成三大佛教体系建筑群落，完整呈现了佛教在中国传播的多样性。坛城不仅是建筑，更是一种修行工具——曼茶罗的立体化呈现。', highlights: ['藏式坛城建筑', '转经筒祈福'], visit: '转经时顺时针行进，登顶可俯瞰梵宫和大佛全景。' },
-  'LS-015': { story: '曼飞龙塔呈现南传佛教建筑风格，复刻西双版纳曼飞龙白塔，把云南傣族佛教文化移植到太湖之滨，拓展了灵山胜境的文化地理跨度。三大语系佛教建筑齐聚灵山，形成"不出灵山看遍中国佛教"的效果。', highlights: ['九塔组合白塔', '南传佛教风格'], visit: '光线充足时白塔拍照效果更好，与梵宫、坛城形成建筑风格对比。' },
-  'LS-016': { story: '无尽意斋纪念赵朴初先生，把灵山胜境的"人"的因素补充完整——不仅是佛教建筑群，更是赵朴初等人推动中国佛教复兴的成果展示。宅院本身也是传统建筑艺术的体现。', highlights: ['赵朴初纪念空间', '禅茶体验'], visit: '适合避开主景区人流后安静参观，品一杯禅茶，感受院落清幽。' },
+  'LS-001': { story: '这里是灵山胜境游线的序章，照壁以沉稳的青石和鎏金题字形成第一重视觉仪式感。游客从这里入园，会先感受到太湖山水与佛教文化共同铺开的开阔气象。', highlights: ['赵朴初题写“灵山胜境”', '适合拍摄景区入口纪念照', '太湖风光与照壁同框'], visit: '建议入园后先在照壁前停留5到10分钟，完成合影后沿中轴线进入五明桥方向。' },
+  'LS-002': { story: '五明桥把游客从入口区引向佛教文化主轴，桥名来自佛教“五明”学问体系。它不只是通行桥梁，也象征从日常空间进入智慧修习空间。', highlights: ['五座汉白玉桥并列', '香水海水面开阔', '五明智慧主题鲜明'], visit: '桥面平缓，适合慢行观景；清晨和傍晚光线柔和，水面倒影更明显。' },
+  'LS-003': { story: '佛足坛以佛足印作为礼敬对象，表达“佛迹所至，吉祥随行”的寓意。足印上的纹样细节丰富，适合近距离观察。', highlights: ['青铜佛足印', '32种吉祥瑞相', '祈福互动感强'], visit: '可顺路衔接菩提大道，停留时注意不要长时间占据拍照点位。' },
+  'LS-004': { story: '五智门是进入核心礼佛区的重要门户，五门六柱将“五方五佛”和“六度波罗蜜”的佛教义理转化为建筑语言。穿门而过，会形成明显的游览节奏转换。', highlights: ['汉白玉牌坊造型', '五方五佛象征', '中轴线仪式感'], visit: '适合站在门前中轴位置拍摄纵深构图，再继续前往菩提大道。' },
+  'LS-005': { story: '菩提大道用树阵和步道构成一条安静的过渡空间，象征佛陀悟道之路。两侧树荫让这里成为从热闹入口走向庄严大佛区的缓冲段。', highlights: ['约250米禅意步道', '菩提树拱廊', '四季景致变化'], visit: '建议放慢脚步游览，夏季可作为避暑休息段，雨后路面注意防滑。' },
+  'LS-006': { story: '九龙灌浴是灵山最具动态效果的景观之一，通过莲花绽放、九龙喷水和太子佛升起，再现佛陀诞生时“九龙吐水”的传说。', highlights: ['定时动态表演', '鎏金太子佛', '可接取祈福圣水'], visit: '表演前10到15分钟到场更容易找到观看位置，表演结束后人流会短时集中。' },
+  'LS-007': { story: '降魔浮雕把佛陀成道前战胜魔王波旬的故事浓缩在石刻画面中，人物、场景和线条都强调修行中的定力与觉悟。', highlights: ['花岗岩大型浮雕', '佛陀成道故事', '雕刻细节丰富'], visit: '适合边走边看，建议从左到右观察画面叙事，不必长时间停留。' },
+  'LS-008': { story: '阿育王柱借鉴古印度佛教传播中的经典符号，四狮柱头象征佛法向四方传播。它在中轴线上起到承前启后的精神标识作用。', highlights: ['整块花岗岩雕成', '四狮柱头', '佛法传播象征'], visit: '可与五智门、灵山大佛连成一组观看，理解景区中轴线的层层递进。' },
+  'LS-009': { story: '百子戏弥勒以欢喜、亲近和包容为主题，把弥勒信仰转化为亲子游客也容易理解的生活化场景。百名孩童形态各异，是景区中最轻松活泼的雕塑之一。', highlights: ['弥勒佛卧姿群雕', '百名孩童互动场景', '适合亲子拍照'], visit: '游客较多时可从侧面观察雕塑细节，拍照后继续前往祥符禅寺方向。' },
+  'LS-010': { story: '祥符禅寺承接小灵山古刹传统，是景区中更具寺院气息的空间。古井、银杏、钟声和殿宇共同构成了安静庄严的礼佛体验。', highlights: ['唐代古刹传承', '祥符禅钟', '古井银杏'], visit: '入寺保持安静，若遇钟声或法务活动，可在外围驻足聆听。' },
+  'LS-011': { story: '灵山大佛是景区精神核心，88米青铜立佛面向太湖，手印寓意施无畏与施与愿。登临佛脚区域后，空间尺度会从远观的震撼转为近距离礼敬。', highlights: ['88米露天青铜大佛', '抱佛脚体验', '俯瞰太湖景观'], visit: '体力允许可登顶抱佛脚；节假日排队时间较长，建议上午或临近闭园前错峰。' },
+  'LS-012': { story: '佛教文化博览馆位于大佛座基内，承担知识展示和礼佛体验的补充功能。这里适合在参拜大佛前后系统了解佛教造像、礼仪和灵山文化。', highlights: ['大佛座基展馆', '万佛殿', '室内文化展示'], visit: '雨天或高温时适合安排较长停留，注意关注免费讲解时段。' },
+  'LS-013': { story: '灵山梵宫以宏大的建筑体量和精细工艺展示佛教艺术，被称为东方卢浮宫。木雕、壁画、穹顶和演出共同营造出沉浸式的佛教艺术空间。', highlights: ['72000平方米建筑', '东方卢浮宫美誉', '吉祥颂演出'], visit: '建议预留至少1小时，若计划观看《吉祥颂》，先确认当天演出时间。' },
+  'LS-014': { story: '五印坛城融合藏式建筑、唐卡壁画和转经体验，强调密宗坛城的空间秩序。色彩、纹样和层层空间都很适合慢慢观看。', highlights: ['藏式坛城建筑', '手工壁画唐卡', '转经筒祈福'], visit: '进入室内后建议按动线逐层参观，转经时顺时针行进。' },
+  'LS-015': { story: '曼飞龙塔呈现南传佛教建筑风格，与景区中汉传、藏传文化空间形成对照。白塔、金顶和塔群组合让这里有明显的异域气质。', highlights: ['九塔组合白塔', '南传佛教风格', '夜间轮廓优美'], visit: '适合安排在主线游览后半段，光线充足时白塔拍照效果更好。' },
+  'LS-016': { story: '无尽意斋纪念赵朴初先生，与灵山胜境的题名和文化精神紧密相关。空间尺度不大，但更适合安静阅读、品茶和了解人物生平。', highlights: ['赵朴初纪念空间', '四合院式院落', '禅茶体验'], visit: '适合避开主景区人流后安静参观，室内拍照请避免闪光灯。' },
 };
 
 function getDetailImageFit(poiId: string) {
@@ -48,31 +48,41 @@ function getDetailImageFit(poiId: string) {
 
 function getDetailImagePosition(poiId: string) {
   const map: Record<string, string> = {
-    'LS-006': 'center center', 'LS-010': 'center center', 'LS-011': 'center center',
-    'LS-013': 'center center', 'LS-014': 'center center',
+    'LS-006': 'center center',
+    'LS-010': 'center center',
+    'LS-011': 'center center',
+    'LS-013': 'center center',
+    'LS-014': 'center center',
   };
   return map[poiId] || 'center center';
 }
 
+// ─── 图片轮播组件 ────────────────────────────────────
 function ImageCarousel({ images, poiName, poiId }: { images: string[]; poiName: string; poiId: string }) {
-  const isMobile = useMediaQuery('(max-width: 768px)');
   const [current, setCurrent] = useState(0);
+  const [animDir, setAnimDir] = useState(0);
   const thumbRef = useRef<HTMLDivElement>(null);
   const total = images.length;
 
   const goTo = (idx: number) => {
     if (idx < 0 || idx >= total || idx === current) return;
+    setAnimDir(idx > current ? 1 : -1);
     setCurrent(idx);
+    // Auto-scroll thumbnails
     if (thumbRef.current) {
       const child = thumbRef.current.children[idx] as HTMLElement;
       if (child) child.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
     }
   };
 
+  const prev = () => goTo(current - 1);
+  const next = () => goTo(current + 1);
+
   return (
-    <div style={{ borderRadius: isMobile ? 18 : 24, overflow: 'hidden', background: 'rgba(255,255,255,0.55)', border: '1px solid rgba(180,136,100,0.10)', padding: isMobile ? 10 : 16 }}>
-      <div style={{ position: 'relative', borderRadius: isMobile ? 14 : 18, overflow: 'hidden', background: '#F2EBDA' }}>
-        <div style={{ overflow: 'hidden', width: '100%', height: isMobile ? 280 : 570 }}>
+    <div style={{ borderRadius: 24, overflow: 'hidden', background: 'rgba(255,255,255,0.55)', border: '1px solid rgba(180,136,100,0.10)', padding: 16 }}>
+      {/* 主大图容器 — 单图显示 */}
+      <div style={{ position: 'relative', borderRadius: 18, overflow: 'hidden', background: '#F2EBDA' }}>
+        <div style={{ overflow: 'hidden', width: '100%', height: 570 }}>
           <div style={{
             display: 'flex', width: `${total * 100}%`, height: '100%',
             transform: `translateX(-${(current / total) * 100}%)`,
@@ -85,7 +95,8 @@ function ImageCarousel({ images, poiName, poiId }: { images: string[]; poiName: 
                     width: '100%', height: '100%',
                     objectFit: getDetailImageFit(poiId),
                     objectPosition: getDetailImagePosition(poiId),
-                    background: '#F2EBDA', display: 'block',
+                    background: '#F2EBDA',
+                    display: 'block',
                   }}
                   onError={e => { (e.target as HTMLImageElement).style.background = '#F2EBDA'; }}
                 />
@@ -93,22 +104,28 @@ function ImageCarousel({ images, poiName, poiId }: { images: string[]; poiName: 
             ))}
           </div>
         </div>
-        <button onClick={() => goTo(current - 1)} disabled={current === 0}
+        {/* 左右箭头 */}
+        <button onClick={prev} disabled={current === 0}
           style={{
             position: 'absolute', left: 12, top: '50%', transform: 'translateY(-50%)',
-            width: isMobile ? 32 : 40, height: isMobile ? 32 : 40, borderRadius: '50%', border: 'none',
-            background: 'rgba(61,44,42,0.55)', color: '#fff', fontSize: 18,
-            cursor: current === 0 ? 'default' : 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center',
-            opacity: current === 0 ? 0.3 : 1,
+            width: 40, height: 40, borderRadius: '50%', border: 'none',
+            background: current === 0 ? 'rgba(61,44,42,0.15)' : 'rgba(61,44,42,0.55)',
+            color: current === 0 ? 'rgba(255,255,255,0.3)' : '#fff',
+            fontSize: 18, cursor: current === 0 ? 'default' : 'pointer',
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            transition: 'all 0.2s', backdropFilter: 'blur(4px)',
           }}>‹</button>
-        <button onClick={() => goTo(current + 1)} disabled={current >= total - 1}
+        <button onClick={next} disabled={current >= total - 1}
           style={{
             position: 'absolute', right: 12, top: '50%', transform: 'translateY(-50%)',
-            width: isMobile ? 32 : 40, height: isMobile ? 32 : 40, borderRadius: '50%', border: 'none',
-            background: 'rgba(61,44,42,0.55)', color: '#fff', fontSize: 18,
-            cursor: current >= total - 1 ? 'default' : 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center',
-            opacity: current >= total - 1 ? 0.3 : 1,
+            width: 40, height: 40, borderRadius: '50%', border: 'none',
+            background: current >= total - 1 ? 'rgba(61,44,42,0.15)' : 'rgba(61,44,42,0.55)',
+            color: current >= total - 1 ? 'rgba(255,255,255,0.3)' : '#fff',
+            fontSize: 18, cursor: current >= total - 1 ? 'default' : 'pointer',
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            transition: 'all 0.2s', backdropFilter: 'blur(4px)',
           }}>›</button>
+        {/* 页码 */}
         <div style={{
           position: 'absolute', bottom: 12, right: 16,
           padding: '3px 12px', borderRadius: 20,
@@ -116,20 +133,27 @@ function ImageCarousel({ images, poiName, poiId }: { images: string[]; poiName: 
           fontSize: '0.75rem', color: '#fff',
         }}>{current + 1} / {total}</div>
       </div>
+
+      {/* 缩略图栏 */}
       <div ref={thumbRef} style={{
         display: 'flex', gap: 8, marginTop: 10, padding: '4px 0',
-        overflowX: 'auto', scrollBehavior: 'smooth', WebkitOverflowScrolling: 'touch',
+        overflowX: 'auto', scrollBehavior: 'smooth',
+        WebkitOverflowScrolling: 'touch',
+        scrollbarWidth: 'thin',
       }}>
         {images.map((src, i) => (
           <img key={i} src={src} alt={`${poiName} thumb ${i + 1}`}
             onClick={() => goTo(i)}
             onError={e => { (e.target as HTMLImageElement).style.display = 'none'; }}
             style={{
-              width: isMobile ? 64 : 80, height: isMobile ? 44 : 56, borderRadius: 10,
-              objectFit: getDetailImageFit(poiId), objectPosition: getDetailImagePosition(poiId),
-              background: '#F2EBDA', flexShrink: 0,
+              width: 80, height: 56, borderRadius: 10,
+              objectFit: getDetailImageFit(poiId),
+              objectPosition: getDetailImagePosition(poiId),
+              background: '#F2EBDA',
+              flexShrink: 0,
               cursor: 'pointer', opacity: i === current ? 1 : 0.4,
               border: i === current ? '2px solid #8B6E57' : '2px solid transparent',
+              transition: 'all 0.25s',
             }}
           />
         ))}
@@ -165,20 +189,21 @@ export default function PoiDetailPage({ poiId, onNavigate }: { poiId: string; on
         <div style={{ flex: isMobile ? 'none' : '0 0 55%', display:'flex', flexDirection:'column', gap: isMobile ? 12 : 16 }}>
           <div style={{ borderRadius: isMobile ? 16 : 20, padding: isMobile ? 14 : 20, background:'rgba(255,255,255,0.55)', border:'1px solid rgba(180,136,100,0.10)' }}>
             <div style={{ fontSize:'0.7rem', color:'#8B6E57', marginBottom:8 }}>详细介绍</div>
-            <p style={{ fontSize: isMobile ? '0.82rem' : '0.95rem', color:'rgba(61,44,42,0.65)', lineHeight:1.9 }}>
-              {showAll ? poi.detail : poi.detail.slice(0, isMobile ? 80 : 120) + (poi.detail.length > (isMobile ? 80 : 120) ? '...' : '')}
+            <p style={{ fontSize:'0.95rem', color:'rgba(61,44,42,0.65)', lineHeight:1.9 }}>
+              {showAll ? poi.detail : poi.detail.slice(0, 120) + (poi.detail.length > 120 ? '...' : '')}
             </p>
-            {poi.detail.length > (isMobile ? 80 : 120) && (
+            {poi.detail.length > 120 && (
               <button className="btn-text" onClick={() => setShowAll(!showAll)} style={{ marginTop:8 }}>
                 {showAll ? '收起' : '展开全部'}
               </button>
             )}
           </div>
+
           {extended && (
             <>
               <div style={{ borderRadius: isMobile ? 16 : 20, padding: isMobile ? 14 : 20, background:'rgba(255,255,255,0.55)', border:'1px solid rgba(180,136,100,0.10)' }}>
                 <div style={{ fontSize:'0.7rem', color:'#8B6E57', marginBottom:8 }}>文化解读</div>
-                <p style={{ fontSize: '0.82rem', color:'rgba(61,44,42,0.62)', lineHeight:1.85 }}>{extended.story}</p>
+                <p style={{ fontSize:'0.82rem', color:'rgba(61,44,42,0.62)', lineHeight:1.85 }}>{extended.story}</p>
               </div>
               <div style={{ borderRadius: isMobile ? 16 : 20, padding: isMobile ? 14 : 20, background:'rgba(255,255,255,0.55)', border:'1px solid rgba(180,136,100,0.10)' }}>
                 <div style={{ fontSize:'0.7rem', color:'#8B6E57', marginBottom:10 }}>核心看点</div>
@@ -199,15 +224,18 @@ export default function PoiDetailPage({ poiId, onNavigate }: { poiId: string; on
           )}
         </div>
 
-        <div style={{ flex:1, display:'flex', flexDirection:'column', gap: isMobile ? 10 : 14 }}>
+        {/* 右栏 45% — 信息卡片 */}
+        <div style={{ flex:1, display:'flex', flexDirection:'column', gap:14 }}>
           <div style={{ borderRadius: isMobile ? 16 : 20, padding: isMobile ? 14 : 20, background:'rgba(255,255,255,0.55)', border:'1px solid rgba(180,136,100,0.10)' }}>
-            <h1 style={{ fontSize: isMobile ? '1.1rem' : '1.3rem', fontWeight:700, color:'#3D2C2A', fontFamily:"'Noto Serif SC',serif" }}>{poi.name}</h1>
+            <div style={{ display:'flex', alignItems:'center', gap:8, marginBottom:4 }}>
+              <h1 style={{ fontSize: isMobile ? '1.1rem' : '1.3rem', fontWeight:700, color:'#3D2C2A', fontFamily:"'Noto Serif SC',serif" }}>{poi.name}</h1>
+            </div>
             <span style={{ fontSize:'0.65rem', padding:'2px 10px', borderRadius:9999, background:'rgba(180,136,100,0.08)', color:'#8B6E57' }}>{poi.category}</span>
           </div>
 
-          <div style={{ borderRadius: isMobile ? 16 : 20, padding: isMobile ? 12 : 16, background:'rgba(255,255,255,0.55)', border:'1px solid rgba(180,136,100,0.10)' }}>
+          <div style={{ borderRadius:20, padding:16, background:'rgba(255,255,255,0.55)', border:'1px solid rgba(180,136,100,0.10)' }}>
             <div style={{ fontSize:'0.7rem', fontWeight:600, color:'#8B6E57', marginBottom:10 }}>实用信息</div>
-            <div style={{ display:'grid', gridTemplateColumns: isMobile ? '1fr 1fr' : '1fr 1fr', gap:8, fontSize:'0.72rem' }}>
+            <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:8, fontSize:'0.72rem' }}>
               <div style={{ padding:'8px 10px', borderRadius:10, background:'rgba(180,136,100,0.06)' }}>
                 <div style={{ color:'rgba(61,44,42,0.4)', marginBottom:2 }}>开放时间</div>
                 <div style={{ fontWeight:600, color:'#3D2C2A' }}>{poi.openingInfo}</div>
@@ -229,11 +257,21 @@ export default function PoiDetailPage({ poiId, onNavigate }: { poiId: string; on
             </div>
           </div>
 
-          <div style={{ borderRadius: isMobile ? 16 : 20, padding: isMobile ? 12 : 16, background:'rgba(255,255,255,0.55)', border:'1px solid rgba(180,136,100,0.10)' }}>
+          <div style={{ borderRadius:20, padding:16, background:'rgba(255,255,255,0.55)', border:'1px solid rgba(180,136,100,0.10)' }}>
             <div style={{ fontSize:'0.7rem', fontWeight:600, color:'#8B6E57', marginBottom:6 }}>游览小贴士</div>
             <div style={{ display:'flex', gap:6 }}>
               <span style={{ fontSize:'0.85rem' }}>💡</span>
               <span style={{ fontSize:'0.72rem', color:'rgba(61,44,42,0.55)', lineHeight:1.6 }}>{poi.tips}</span>
+            </div>
+          </div>
+
+          <div style={{ borderRadius:20, padding:16, background:'rgba(255,255,255,0.55)', border:'1px solid rgba(180,136,100,0.10)' }}>
+            <div style={{ fontSize:'0.7rem', fontWeight:600, color:'#8B6E57', marginBottom:8 }}>拥挤度</div>
+            <div style={{ height:8, borderRadius:4, background:'rgba(180,136,100,0.10)', overflow:'hidden' }}>
+              <div style={{ width:`${(poi.crowdedness/5)*100}%`, height:'100%', borderRadius:4, background:poi.crowdedness <= 2 ? '#22c55e' : poi.crowdedness <= 3 ? '#f59e0b' : '#ef4444' }} />
+            </div>
+            <div style={{ display:'flex', justifyContent:'space-between', fontSize:'0.6rem', color:'rgba(61,44,42,0.3)', marginTop:2 }}>
+              <span>畅通</span><span>适中</span><span>拥挤</span>
             </div>
           </div>
 
@@ -243,7 +281,8 @@ export default function PoiDetailPage({ poiId, onNavigate }: { poiId: string; on
         </div>
       </div>
 
-      <div style={{ marginTop: isMobile ? 14 : 20 }}>
+      {/* 底部：图片轮播 */}
+      <div style={{ marginTop: 20 }}>
         <ImageCarousel images={images} poiName={poi.name} poiId={poiId} />
       </div>
     </div>
